@@ -1,0 +1,4 @@
+#m默认启动环境dev，就是不在虚拟机中添加日志
+spring:
+  profiles:
+    active: dev

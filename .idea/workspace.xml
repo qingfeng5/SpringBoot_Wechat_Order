@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="springboot_order:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="afe91245-40d8-4731-801d-d1c92d229a25" name="Default Changelist" comment="微信支付">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/springboot_order_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Exception/ResponseBankException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Exception/SellerAuthorizeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/aspect/SellerAuthorizeAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/config/ProjectUrlCinfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/config/WechatOpenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/constant/CookieConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/constant/RedisConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/SecKillController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/SellerCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/SellerProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/SellerUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/dataobject/SellerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/dataobject/dao/ProductCategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/dataobject/mapper/ProductCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/form/CategoryForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/form/ProductForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/handler/SellExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/repository/SellerInfoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/PushMessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/RedisLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/SecKillService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/SellerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/PushMessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/SecKillServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/SellerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/utils/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/utils/EnumUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/utils/MathUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enums/CodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/mp3/song.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/error.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/header.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/nav.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pay/success.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/product/index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/product/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/springboot/dataobject/mapper/ProductCategoryMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/springboot/repository/SellerInfoRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/springboot/service/impl/PushMessageServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/springboot/service/impl/SellerServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/Exception/SellException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/Exception/SellException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/SellApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/SellApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/VO/ProductInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/VO/ProductInfoVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/VO/ProductVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/VO/ProductVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/VO/ResultVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/VO/ResultVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/config/WechatAccountConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/config/WechatAccountConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/controller/BuyerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/BuyerOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/controller/BuyerProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/BuyerProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/controller/PayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/PayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/controller/SellerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/SellerOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/controller/WechatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/WechatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/converter/OrderForm2OrderDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/converter/OrderForm2OrderDTOConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/dataobject/OrderMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/dataobject/OrderMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/dataobject/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/dataobject/ProductInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/dto/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/enums/OrderStatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/enums/PayStatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/enums/ProductStatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/enums/ResultEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/PayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/PayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/PayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/PayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/buyerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/buyerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/utils/serializer/Date2LongSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/utils/serializer/Date2LongSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/api/ratings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/springboot/repository/OrderDetailRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springboot/repository/OrderDetailRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/springboot/repository/ProductCategoryRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springboot/repository/ProductCategoryRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/springboot/repository/ProductInfoRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springboot/repository/ProductInfoRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/springboot/service/impl/CategoryServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springboot/service/impl/CategoryServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/springboot/service/impl/OrderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springboot/service/impl/OrderServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/springboot/service/impl/PayServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springboot/service/impl/PayServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/springboot/service/impl/ProductServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springboot/service/impl/ProductServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/springboot_order.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/Exception/SellException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/Exception/SellException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/SellApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/SellApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/VO/ProductInfoVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/VO/ProductInfoVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/VO/ProductVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/VO/ProductVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/VO/ResultVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/VO/ResultVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/config/UpYunconfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/config/UpYunconfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/config/WechatAccountConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/config/WechatAccountConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/config/WechatMpConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/config/WechatMpConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/config/WechatPayConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/config/WechatPayConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/controller/BuyerOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/controller/BuyerOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/controller/BuyerProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/controller/BuyerProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/controller/PayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/controller/PayController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/controller/SellerOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/controller/SellerOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/controller/WechatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/controller/WechatController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/controller/WeixinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/controller/WeixinController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/converter/OrderForm2OrderDTOConverter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/converter/OrderForm2OrderDTOConverter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/converter/OrderForm2OrderDTOConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/converter/OrderForm2OrderDTOConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/converter/OrderMaster2OrderDTOConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/converter/OrderMaster2OrderDTOConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/dataobject/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/dataobject/OrderDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/dataobject/OrderMaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/dataobject/OrderMaster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/dataobject/ProductCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/dataobject/ProductCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/dataobject/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/dataobject/ProductInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/dto/CartDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/dto/CartDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/dto/OrderDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/dto/OrderDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/enums/OrderStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/enums/PayStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/enums/ProductStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/enums/ResultEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/form/OrderForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/form/OrderForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/repository/OrderDetailRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/repository/OrderDetailRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/repository/OrderMasterRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/repository/OrderMasterRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/repository/ProductCategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/repository/ProductCategoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/repository/ProductInfoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/repository/ProductInfoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/service/BuyerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/service/BuyerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/service/PayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/service/PayService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/service/impl/CategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/service/impl/PayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/service/impl/PayServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/service/impl/buyerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/service/impl/buyerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/utils/JsonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/utils/JsonUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/utils/KeyUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/utils/KeyUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/utils/ResultVOUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/utils/ResultVOUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/utils/serializer/Date2LongSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/utils/serializer/Date2LongSerializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/api/ratings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springboot/repository/OrderDetailRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springboot/repository/OrderDetailRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springboot/repository/OrderMasterRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springboot/repository/OrderMasterRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springboot/repository/ProductCategoryRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springboot/repository/ProductCategoryRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springboot/repository/ProductInfoRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springboot/repository/ProductInfoRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springboot/service/LoggerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springboot/service/LoggerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springboot/service/SellApplicationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springboot/service/SellApplicationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springboot/service/impl/CategoryServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springboot/service/impl/CategoryServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springboot/service/impl/OrderServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springboot/service/impl/OrderServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springboot/service/impl/PayServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springboot/service/impl/PayServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springboot/service/impl/ProductServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springboot/service/impl/ProductServiceImplTest.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\MavenRepository\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectId" id="1SRz5PVgeaTfLuka3VdidE7nTs0" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../源码/SSM整合开发源代码/oa" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.14074914" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.springboot.dataobject.mapper" />
+      <recent name="com.springboot.service.impl" />
+      <recent name="com.springboot.repository" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.springboot.form" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\springstudy\springboot_order\src\main\resources" />
+      <recent name="D:\study\springstudy\springboot_order\src\main\resources\templates" />
+      <recent name="D:\study\springstudy\springboot_order\src\main\resources\templates\category" />
+      <recent name="D:\study\springstudy\springboot_order\src\main\resources\templates\product" />
+      <recent name="D:\study\springstudy\springboot_order\src\main\resources\templates\order" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\study\springstudy\springboot_order\src\main\resources" />
+      <recent name="D:\study\springstudy\springboot_order\src\main\resources\templates\pay" />
+      <recent name="D:\study\springstudy\springboot_order\src\main\resources\templates" />
+      <recent name="D:\study\springstudy\springboot_order\src\main\resources\templates\pay\pay" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.OrderServiceImplTest.create">
+    <configuration name="OrderDetailRepositoryTest.findByOrderId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springboot.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springboot.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.springboot.repository.OrderDetailRepositoryTest" />
+      <option name="METHOD_NAME" value="findByOrderId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderDetailRepositoryTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springboot.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springboot.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.springboot.repository.OrderDetailRepositoryTest" />
+      <option name="METHOD_NAME" value="saveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderMasterRepositoryTest.findByBuyerOpenid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springboot.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springboot.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.springboot.repository.OrderMasterRepositoryTest" />
+      <option name="METHOD_NAME" value="findByBuyerOpenid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderMasterRepositoryTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springboot.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springboot.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.springboot.repository.OrderMasterRepositoryTest" />
+      <option name="METHOD_NAME" value="saveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springboot.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springboot.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.springboot.service.impl.OrderServiceImplTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OrderServiceImplTest.create" />
+        <item itemvalue="JUnit.OrderDetailRepositoryTest.findByOrderId" />
+        <item itemvalue="JUnit.OrderDetailRepositoryTest.saveTest" />
+        <item itemvalue="JUnit.OrderMasterRepositoryTest.findByBuyerOpenid" />
+        <item itemvalue="JUnit.OrderMasterRepositoryTest.saveTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="afe91245-40d8-4731-801d-d1c92d229a25" name="Default Changelist" comment="微信支付" />
+      <created>1563326877888</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563326877888</updated>
+      <workItem from="1563326881782" duration="5031000" />
+      <workItem from="1563672593780" duration="7202000" />
+      <workItem from="1563683701882" duration="3815000" />
+      <workItem from="1563688384031" duration="806000" />
+      <workItem from="1564281734016" duration="7201000" />
+      <workItem from="1564294859310" duration="768000" />
+      <workItem from="1564295725951" duration="954000" />
+      <workItem from="1564362067327" duration="8145000" />
+      <workItem from="1564624812008" duration="3912000" />
+      <workItem from="1564628885087" duration="292000" />
+      <workItem from="1564710329400" duration="11000" />
+      <workItem from="1564710893187" duration="5099000" />
+      <workItem from="1564799493330" duration="7735000" />
+      <workItem from="1564900074976" duration="4037000" />
+      <workItem from="1564964098740" duration="5630000" />
+      <workItem from="1567130758494" duration="3607000" />
+      <workItem from="1567217493596" duration="7068000" />
+      <workItem from="1567304555117" duration="1222000" />
+      <workItem from="1567305875525" duration="11838000" />
+      <workItem from="1567514612933" duration="2592000" />
+      <workItem from="1567566379170" duration="1320000" />
+      <workItem from="1567576286803" duration="3671000" />
+      <workItem from="1567580153650" duration="3233000" />
+      <workItem from="1567583716388" duration="2481000" />
+      <workItem from="1571541023784" duration="838000" />
+      <workItem from="1571705770150" duration="1670000" />
+      <workItem from="1575162789365" duration="134000" />
+      <workItem from="1578818092445" duration="10278000" />
+      <workItem from="1578878189295" duration="13711000" />
+      <workItem from="1578967145884" duration="6526000" />
+      <workItem from="1578992156100" duration="4973000" />
+      <workItem from="1579048526841" duration="15026000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="微信支付" />
+    <option name="LAST_COMMIT_MESSAGE" value="微信支付" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/springboot/controller/PayController.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/springboot/service/impl/OrderServiceImplTest.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/springboot/controller/SellerProductController.java</url>
+          <line>169</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/springboot/controller/SellerProductController.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/springboot/controller/SellerCategoryController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/springboot/repository/ProductCategoryRepositoryTest.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/springboot/service/impl/ProductServiceImplTest.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/springboot/repository/OrderMasterRepositoryTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/springboot/controller/SellerCategoryController.java</url>
+          <line>39</line>
+          <properties class="com.springboot.controller.SellerCategoryController" method="list" />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/springboot/service/impl/ProductServiceImplTest.java</url>
+          <line>49</line>
+          <properties class="com.springboot.service.impl.ProductServiceImplTest" method="findAll">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="page" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>springboot_order:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (springboot_order)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>springboot_order</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="package -Dmaven.test.skip=true" />
+  </component>
+</project>
